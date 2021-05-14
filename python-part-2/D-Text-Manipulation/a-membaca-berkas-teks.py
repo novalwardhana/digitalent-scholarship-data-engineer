@@ -1,0 +1,13 @@
+# Membaca file dengan fungsi read()
+print(">>> Membaca file dengan fungsi read()")
+file = open("sample.txt", "r")
+content = file.read()
+file.close()
+print(content)
+
+file = open("sample.txt", "r")
+firstLine = file.readline()
+secondLine = file.readline()
+file.close()
+print(firstLine)
+print(secondLine)
