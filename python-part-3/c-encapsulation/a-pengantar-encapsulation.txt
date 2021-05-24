@@ -1,0 +1,6 @@
+Enkapsulasi (Encapsulation) adalah sebuah teknik dalam OOP yang mengizinkan aku untuk menyembunyikan detil dari sebuah atribut dalam sebuah class. 
+Pada contoh-contoh sebelumnya, setiap atribut dan fungsi yang telah aku definisikan belum menggunakan konsep enkapsulasi, yang mengartikan bahwa setiap atribut dan fungsi dapat diakses di luar class.
+
+Terdapat 2 macam access modifier dalam Python, yakni.
+a. Public access: dapat aku definisikan dengan secara langsung menuliskan nama dari atribut/ fungsi. Dalam sebuah objek, atribut/fungsi yang bersifat public access dapat diakses di luar scope sebuah class
+b. Private access: dapat aku definisikan dengan menambahkan double underscore (__) sebelum menuliskan nama dari atribut/fungsi. Dalam sebuah objek, atribut/fungsi yang bersifat private access hanya dapat diakses di dalam scope sebuah class.
