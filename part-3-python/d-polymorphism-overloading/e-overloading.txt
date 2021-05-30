@@ -1,0 +1,3 @@
+Pada bahasa pemrograman lain yang mendukung paradigma OO seperti C# ataupun Java, polymorphism juga dapat diterapkan melalui sebuah fitur yang dikenal dengan istilah method overloading.
+Metode overloading mengizinkan sebuah class untuk memiliki sekumpulan fungsi dengan nama yang sama dan parameter yang berbeda. Berkaitan dengan hal ini, Python tidak mengizinkan pendeklarasian fungsi (baik pada class ataupun tidak) dengan nama yang sama.
+Untuk mengimplementasikan method overloading pada Python, aku dapat menggunakan sebuah teknik yang dikenal dengan function default parameters.

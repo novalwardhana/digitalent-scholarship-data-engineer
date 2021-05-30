@@ -1,0 +1,21 @@
+Outliners
+Outliers merupakan data observasi yang muncul dengan nilai-nilai ekstrim. 
+Yang dimaksud dengan nilai-nilai ekstrim dalam observasi adalah nilai yang jauh atau beda sama sekali dengan sebagian besar nilai lain dalam kelompoknya.
+
+Cara treatment terhadap outliers antara lain:
+1. Remove the outliers (dibuang)
+2. Filling the missing value (imputasi)
+3. Capping
+4. Prediction
+
+Pada umumnya, outliers dapat ditentukan dengan metric IQR (interquartile range).
+Rumus dasar dari IQR: Q3 - Q1, 
+dan data suatu observasi dapat dikatakan outliers jika memenuhi kedua syarat dibawah ini:
+1. < Q1 - 1.5 * IQR
+2. > Q3 + 1.5 * IQR
+Syntax di python:
+1. Q1 = dataframe['column_name'].quantile[0.25]
+2. Q3 = dataframe['column_name'].quantile[0.75]
+3. IQR = Q3 - Q1
+4. dataframe = dataframe[~((dataframe['column_name'] < (Q1 - 1.5 * IQR)) | (dataframe['column_name'] > (Q3 + 1.5 * IQR)))] 
+5. dataframe.shape
